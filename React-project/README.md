@@ -3,13 +3,15 @@
 slides link ="https://www.canva.com/design/DAGStTo7_1Y/H-uoNlkdJ2X4P3LbOME45Q/edit";
 other slides link better :="https://petal-estimate-4e9.notion.site/React-Part-1-1177dfd1073580069172fc54e33929c0"
 
-what does .jsx stands for??<br>
+## what does .jsx stands for??<br>
 it means JAVA SCRIPT XML ;
 the code doesn't returns use HTMl it returns XML
 <BR>
-WHAT IS XML??<BR>
+
+## WHAT IS XML??<BR>
 IT IS VERY SIMILAR WAY OF RETURNING DATA LIKE JSON
 <hr>
+
 ## ways to initialize a react project
 <br>
 npx create vite@latest
