@@ -1,0 +1,25 @@
+import {useState} from "react";
+function App(){
+  const [count,setcount]=useState(1);
+  function increase(){
+    setcount(count+1);
+  }
+  
+
+  return (
+    <div style={{dispaly:"flex-start"}}> 
+      hi theree what's up??
+      <hr></hr>
+      <div style={{backgroundColor:"red",width:15,height:20}}>
+        {count}
+      </div>
+      <div>
+     
+      <img onClick={increase} src={"https://imgs.search.brave.com/2A1xAlCQGEy1dq5J2Qe6kg-jThFupL-ZAlNhYikzpOo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTYv/ODgxLzEyOC9zbWFs/bC9yZWFsaXN0aWMt/M2QtYmVsbC1pY29u/LXdpdGgtYS1tYXR0/ZS1maW5pc2gtb24t/YS1wbGFpbi13aGl0/ZS1iYWNrZ3JvdW5k/LWlsbHVzdHJhdGlv/bi1mcmVlLXZlY3Rv/ci5qcGc"}>
+     </img></div>
+    </div>
+  )
+}
+
+
+export default App
