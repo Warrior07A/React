@@ -1,13 +1,24 @@
-import {useState} from "react";
+import {useState,useEffect} from "react";//make sure to comment strictmode to avoid un necessary interuptions
 function App(){
   const [count,setcount]=useState(1);
-  function increase(){
-    setcount(count+1);
-  }
   
+  function increase(){
+    setcount(c=>c+1);                                       //this is the syntax 
+  }
 
+  useEffect(function() {                                    //when you made the stopwatch you had to put an stopinterval to avoid creating 
+    console.log("hi there");                              //.. multiple loops running all the same time 
+    setInterval(increase,1000);                         //UseEffect provides the environment to safely mount a single loop and then stop
+  },[])                                                   //dont forget this dependency array it sucks when left
+//the uper useEffect with empty depend. array will work only on mount
+
+
+  useEffect(function(){
+    console.log("Your stopwatch has been updated to :" + count)
+  },[count])                                          //this hook only when count state has been updated   
   return (
     <div style={{dispaly:"flex-start"}}> 
+    return {count}
       hi theree what's up??
       <hr></hr>
       <div style={{backgroundColor:"red",width:15,height:20}}>
