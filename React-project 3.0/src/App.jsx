@@ -8,7 +8,11 @@ function App(){
 
   useEffect(function() {                                    //when you made the stopwatch you had to put an stopinterval to avoid creating 
     console.log("hi there");                              //.. multiple loops running all the same time 
-    setInterval(increase,1000);                         //UseEffect provides the environment to safely mount a single loop and then stop
+    const intervalid=setInterval(increase,1000);                         //UseEffect provides the environment to safely mount a single loop and then stop
+  return()=>{
+    clearInterval(intervalid)                           //helps end the loop as soon as it works get done avoids overlapping of multiple loops
+  }
+  
   },[])                                                   //dont forget this dependency array it sucks when left
 //the uper useEffect with empty depend. array will work only on mount
 
