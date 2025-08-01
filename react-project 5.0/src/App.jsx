@@ -1,21 +1,32 @@
-// import {useState,useEffect} from "react";
+// import {useState} from "react";
 
 function App(){
-  return (
-    <div style={{display:"flex"}}>
-<Card  innerContent={"hi there"} />
-<Card innerContent={<div style={{color:"white"}}> hello there</div>}   />
+
+const Card=({children})=>{
+  return(
+     <div style={{color:"blue",padding:20,margin:20,borderRadius:10,border:"2px solid black",width:1000,height:100}}>
+    {children}
     </div>
   )
 
-function Card({innerContent}){
-  return <div style={{color:"white",backgroundColor:"black",width:30,height:30,padding:30,borderRadius:40,margin:29}}>
-    {innerContent}
-  </div>
 }
 
-
-
+  return (
+    <div >
+   <div>
+    <Card>
+      <div style={{fontSize:40,fontFamily:"sans-serif"}} >
+      Card no. 1
+      </div>
+          </Card>
+   </div>
+   <div>
+    <Card>
+      Card No .2
+    </Card>
+   </div>
+   </div>
+  )
 }
 
 export default App
