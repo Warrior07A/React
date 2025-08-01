@@ -13,8 +13,8 @@ function App(){
     clearInterval(intervalid)                           //helps end the loop as soon as it works get done avoids overlapping of multiple loops
   }
   
-  },[])                                                   //dont forget this dependency array it sucks when left
-//the uper useEffect with empty depend. array will work only on mount
+  },[])                                                   //dont forget this dependency array it runs when componenet is mount for the first time
+                                                        //the uper useEffect with empty depend. array will work only on mount
 
 
   useEffect(function(){
