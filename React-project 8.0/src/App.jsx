@@ -20,30 +20,42 @@ return(
             <Route path="*" element={<ErrorPage/>}/>
           </Route>
         </Routes>
-        Footer|Contact Me Zaldi se
         </BrowserRouter>
     </div>
 </>
 )
 }
 function Layout(){
-  return (
-    <div>
-    
-            <Link to="/">ALLEN </Link>                                
-            {/* //header starts here */}
+  return <>
+    <div style={{backgroundColor:"red"}}>
+    <Header/>
+</div>
+<div  style={{height:80,backgroundColor:"green"}}>
+  <Outlet />
+    </div>
+<div style={{backgroundColor:"violet"}}>
+ <FOOTER></FOOTER>
+    </div> 
+</>
+}
+
+
+function FOOTER(){
+    return<div>
+    Contact Me | ZALDI SE
+</div>
+}
+function Header(){
+    return(
+        <div>
+         <Link to="/">ALLEN </Link>                                
             |
             <Link to ="/neet/class11">CLASS 11</Link>
             |   
             <Link to ="/neet/class12">Class12</Link>               
 
-             {/* <Outlet /> . */}
-
-
-             <Outlet />
-             <footer></footer>
-
-    </div> )
+        </div>
+    )
 }
 function Landing(){
     const Navigate=useNavigate();                                 
@@ -65,9 +77,6 @@ function Class11(){
         hi there 1
     </div>
 }
-
-   
-
 
 function Class12(){
 const Navigate=useNavigate(); 

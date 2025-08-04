@@ -1,4 +1,5 @@
 import {BrowserRouter,Routes,Route,Link,useNavigate} from "react-router-dom";//useNaviagte is a hook
+import { Outlet } from 'react-router-dom';   
 
 function App(){ 
 return(
