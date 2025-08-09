@@ -36,3 +36,8 @@ it is used when we have to call a fn only once for e.g. set Interval being calle
 and creates unwanted multiple stacks of setInterval hence crashing the app
 we run those fn in useeffect hook 
 IT TAKES 2 ARGUMENTS (fn , [dependency])
+
+## COMPONENTS
+ <br>
+ A component must begin with Capital i.e. an Uppercase letter  and should be defined outside of App function in most of the cases.
+ 
