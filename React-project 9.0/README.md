@@ -24,3 +24,5 @@ every componenet will go to its input box
 <br>
 input element are self closing i.e. they dont need "</input>" just put a '/' at end.
 
+
+
